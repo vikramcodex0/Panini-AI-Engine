@@ -10,4 +10,4 @@ Dunya ka pehla AI tool jo Panini ke Sanskrit Sutras ko Python code se chalata ha
 ## 💻 Tech Stack:
 * Python 
 * gTTS (Google Text-to-Speech)
-*
+
