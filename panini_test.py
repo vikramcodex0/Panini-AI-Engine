@@ -208,7 +208,13 @@ def smart_sandhi(word1, word2):
         print("\n[AI Explain]: Yahan Panini ka Sutra 6.1.101 (Akah Savarne Dirghah) apply hua.")
         print(f"Logic: Same vowels milkar bade '{result[-2:]}' ban gaye.")
         return result
-        
+        # Rule 3: Yan Sandhi (i + any other vowel = y)
+    # Sutra: Iko Yanachi (6.1.77)
+    elif last_char == "i" and first_char != "i":
+        result = word1[:-1] + "y" + word2
+        print("\n[AI Explain]: Yahan Panini ka Sutra 6.1.77 (Iko Yanachi) apply hua.")
+        print(f"Logic: '{last_char}' badal kar 'y' ban gaya kyunki aage alag vowel '{first_char}' hai.")
+        return result
     return word1 + word2
 # Menu ko start karne ke liye
 # Isse program tab tak chalega jab tak aap band nahi karte
